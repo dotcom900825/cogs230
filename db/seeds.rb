@@ -35,7 +35,7 @@ User.create(:username=>'Feng Zhu', :user_type=>0, :use_system=>0)
 
 #p1 = Paper.create(:name=>"Evidence for a Collective IntelligenceFactor in the Performance of Human Groups")
 
-p2 = Paper.create(:name=>"Predicting protein structures with a multiplayer online game", :url=>"http://personal.crocodoc.com/TqkbF0e", :not_collaborative_url=>"www.baidu.com")
+p2 = Paper.create(:name=>"Predicting protein structures with a multiplayer online game", :url=>"http://personal.crocodoc.com/3q5nPhK", :not_collaborative_url=>"http://personal.crocodoc.com/blZc7gV")
 
 q = Question.create(:question=>"What's the limitation of stage-of-the-art Rosetta structure prediction methodology?", :problem1=>'The native structure almost always has higher energy than any non-native conformation', :problem2=>'The free energy landscape that must be searched is extremely small', :problem3=>'Is primarily limited by the conformational sampling ', :problem4=>'There is not a possible way to search this landscape, even Rosetta methodology')
 p2.questions << q
