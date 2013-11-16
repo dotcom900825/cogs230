@@ -1,0 +1,24 @@
+<div class="container">
+
+
+  <%= form_tag sessions_path, :method=>:post, :class=>"form-signin" do %>
+    <h1 class="form-signin-heading">Please sign in</h2>
+    <div class="control-group">
+      <%= label_tag :name , "Select who you are",  :class=>'control-label' %>
+      <div class="controls">
+        <%= select("user", "name", @users.collect {|user| user.username}, {}, {:class=>'selectpicker'}) %>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= label_tag :type , "Are you a native english speaker?",  :class=>'control-label' %>
+      <div class="controls">
+        <%= select("user", "type", ['yes', 'no'], {}, {:class=>'selectpicker'}) %>
+      </div>
+    </div>
+
+    <%= submit_tag "submit", :class=>'btn btn-primary', :style=>'margin-top: 20px'%>
+
+  <% end %>
+
+</div> <!-- /container -->

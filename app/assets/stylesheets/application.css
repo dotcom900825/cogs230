@@ -1,0 +1,68 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+ body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+
+.form-signin {
+  max-width: 430px;
+  padding: 15px;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+.control-label{
+  font-weight: 200;
+}
+.control-group{
+  margin-top: 20px;
+}
+
+.container{
+  font-size: 15px;
+}
+
+.panel-body{
+}
+
+.paper{
+  text-align: center;
+}
+
+li{
+  margin-top: 10px;
+}
+
+.panel-heading, .panel-footer{
+  text-align: center;
+  font-size : 18px;
+}
+
+#clock-sec{
+  margin-left: 160px;
+  margin-top: 100px;
+}
+
+.possible-answer{
+  margin-left: 10px;
+}
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+

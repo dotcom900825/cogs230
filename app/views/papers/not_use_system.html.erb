@@ -1,0 +1,29 @@
+<div class='container' style='padding-top: 50px;'>
+  <div style='width:800px; margin: 0 auto;'>
+    <div class='row description'>
+      <% if current_user.user_type == 1%>
+        <h2 style='text-align: center'>You are a native English speaker</h2>
+      <% else%>
+        <h2 style='text-align: center'>You are not a native English speaker</h2>
+      <% end %>
+      <div class="panel panel-primary">
+        <div class="panel-heading">How to use the system</div>
+        <div class="panel-body">
+          <ul>
+            <li>Open the link below, it would pop up another page where you can see the paper's content</li>
+            <li>Read through the paper, feel free to highlight or make comment on the reading material. You will not be able to see comments from  other classmates, they can not see you comment too.</li>
+            <li>After reading the paper, <span style='font-weight: bold'>please come back to this page and fill out a quick questionaire</span>, it would contain several multiple choice questions, try to answer them without going back to paper. </li>
+          </ul>
+        </div>
+        <div class="panel-footer">
+          All the data we gather would be kept anonymous and woud only be used for research perpose.
+        </div>
+      </div>
+    </div>
+
+    <%= render 'papers/paper_row', :papers=>@papers%>
+
+    <%= render 'papers/question_row', :papers=>@papers%>
+
+  </div>
+</div>
