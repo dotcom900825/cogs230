@@ -37,11 +37,15 @@ User.create(:username=>'Feng Zhu', :user_type=>0, :use_system=>0)
 
 p2 = Paper.create(:name=>"Predicting protein structures with a multiplayer online game", :url=>"http://personal.crocodoc.com/TqkbF0e", :not_collaborative_url=>"www.baidu.com")
 
-q = Question.create(:question=>"How Foldit judge user's score?", :problem1=>'hehe', :problem2=>'hihi', :problem3=>'haha', :problem4=>'hiahia')
+q = Question.create(:question=>"What's the limitation of stage-of-the-art Rosetta structure prediction methodology?", :problem1=>'The native structure almost always has higher energy than any non-native conformation', :problem2=>'The free energy landscape that must be searched is extremely small', :problem3=>'Is primarily limited by the conformational sampling ', :problem4=>'There is not a possible way to search this landscape, even Rosetta methodology')
 p2.questions << q
 
-q = Question.create(:question=>"How advanced user behave on Foldit?", :problem1=>'hehe', :problem2=>'hihi', :problem3=>'haha', :problem4=>'hiahia')
+q = Question.create(:question=>"How Foldit solve the problem that many players have no previous exposure to molecuar biology?", :problem1=>'Ask players to go through the documentation for this game', :problem2=>'Perform a user classfication, if you are a novice than you have to go through technical terms', :problem3=>'Assign a molecuar biology professonal to walk you through those concepts ', :problem4=>'Use series of introductory levels to introduce technical concepts')
 p2.questions << q
+
+q = Question.create(:question=>"In solving the strand-swap problem, which of the following stagement is correct?", :problem1=>'Rosetta did sample some partially swapped conformations, and also retained in subsequent generations', :problem2=>'Human player would ignore the temporary energy increase, because they correctly recognized that the swap could ultimately lead to lower energies', :problem3=>'The automated methods have difficulty performing major protein restructuring operations, especially once the solution has settled in a local high-energy basin', :problem4=>'Human players have difficulty distinguish which starting point will be most useful to them')
+p2.questions << q
+
 
 User.all.each do |user|
   user.papers << p2
