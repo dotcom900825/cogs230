@@ -1,6 +1,10 @@
 <div class='row paper'>
   <h2><%= papers.first.name%></h2>
-  <%= link_to 'Start reading', papers.first.not_collaborative_url, :class=>'btn btn-primary', :id=>'start_reading', :target=>'_blank'%>
+  <% if type %>
+    <%= link_to 'Start reading', papers.first.url, :class=>'btn btn-primary', :id=>'start_reading', :target=>'_blank'%>
+  <% else %>
+    <%= link_to 'Start reading', papers.first.not_collaborative_url, :class=>'btn btn-primary', :id=>'start_reading', :target=>'_blank'%>
+  <% end %>
   <%= link_to 'Finish reading', '#', :class=>'btn btn-info', :style=>'display: none;', :id=>'finish_reading'%>
 </div>
 
