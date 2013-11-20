@@ -15,9 +15,14 @@ class PapersController < ApplicationController
 
   def update
     paper = Paper.find(params[:id])
-    params[:answer].each do |key, value|
-      paper.questions[key.to_i].update_attribute(:answer, value.to_i)
-      paper.update_attribute(:reading_time, paper.reading_time.to_i + params[:reading_time].to_i)
+    if params[:answer]
+      params[:answer].each do |key, value|
+        sa = current_user.student_answers.where(:question_id=>paper.questions[key.to_i]).first_or_initialize
+        sa.answer = value.to_i
+        sa.save
+      end
+      user_paper = current_user.user_papers.where('user_id = ? and paper_id = ?', current_user.id, paper.id).first
+      user_paper.update_attribute(:reading_time, user_paper.reading_time.to_i + params[:reading_time].to_i)
     end
     logout
     redirect_to thank_path

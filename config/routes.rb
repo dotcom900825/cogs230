@@ -7,13 +7,17 @@ Cogs230::Application.routes.draw do
 
   get 'thank' => 'home#thank'
 
-  resources :sessions
+  resources :sessions do
+    post 'cse218', :on=>:collection
+  end
   resources :papers do
     get 'use_system', :on=>:collection
     get 'not_use_system', :on=>:collection
   end
 
   get 'logout' => 'sessions#destroy', as: 'logout'
+
+  get 'cse218' => 'home#cse218'
 
 
   # Example of regular route:

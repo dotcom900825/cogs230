@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131116005020) do
+ActiveRecord::Schema.define(version: 20131120214457) do
 
   create_table "login_counts", force: true do |t|
     t.integer  "esl_count",    default: 0
@@ -23,7 +23,6 @@ ActiveRecord::Schema.define(version: 20131116005020) do
   create_table "papers", force: true do |t|
     t.string   "name"
     t.string   "url"
-    t.time     "reading_time"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "not_collaborative_url"
@@ -42,11 +41,20 @@ ActiveRecord::Schema.define(version: 20131116005020) do
     t.text     "question"
   end
 
+  create_table "student_answers", force: true do |t|
+    t.integer  "user_id"
+    t.integer  "answer"
+    t.integer  "question_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "user_papers", force: true do |t|
     t.integer  "user_id"
     t.integer  "paper_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.time     "reading_time"
   end
 
   create_table "users", force: true do |t|

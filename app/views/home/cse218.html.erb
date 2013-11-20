@@ -1,12 +1,12 @@
 <div class="container">
 
-  <h1>Collaborative Reading tool for students in Cogs230 2013 Fall UCSD</h1>
-  <%= form_tag sessions_path, :method=>:post, :class=>"form-signin" do %>
+  <h1>Collaborative Reading tool for students in CSE 218 2013 Fall UCSD</h1>
+  <%= form_tag cse218_sessions_path, :method=>:post, :class=>"form-signin" do %>
     <h1 class="form-signin-heading">Please sign in</h2>
     <div class="control-group">
-      <%= label_tag :name , "Select who you are",  :class=>'control-label' %>
+      <%= label_tag :name , "Enter your name",  :class=>'control-label' %>
       <div class="controls">
-        <%= select("user", "name", @users.collect {|user| user.username}, {}, {:class=>'selectpicker'}) %>
+        <%= text_field_tag "user[name]", '', :placeholder=>'Your name' %>
       </div>
     </div>
 

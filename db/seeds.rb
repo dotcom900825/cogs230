@@ -51,4 +51,6 @@ User.all.each do |user|
   user.papers << p2
 end
 
+p3 = Paper.create(:name=>"Modular aspect-oriented design with XPIs")
+
 

@@ -7,4 +7,8 @@ class HomeController < ApplicationController
 
   end
 
+  def cs218
+    @user = User.new
+  end
+
 end
