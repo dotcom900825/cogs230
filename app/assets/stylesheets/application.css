@@ -18,6 +18,11 @@
   background-color: #eee;
 }
 
+.tagline{
+  text-align: center;
+  margin-top: 60px;
+}
+
 .form-signin {
   max-width: 430px;
   padding: 15px;

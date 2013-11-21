@@ -35,15 +35,37 @@ User.create(:username=>'Feng Zhu', :user_type=>0, :use_system=>0)
 
 #p1 = Paper.create(:name=>"Evidence for a Collective IntelligenceFactor in the Performance of Human Groups")
 
-p2 = Paper.create(:name=>"Predicting protein structures with a multiplayer online game", :url=>"http://personal.crocodoc.com/3q5nPhK", :not_collaborative_url=>"http://personal.crocodoc.com/blZc7gV")
+p2 = Paper.create(:name=>"Beyong Being There", :url=>"http://personal.crocodoc.com/xfwQq7A", :not_collaborative_url=>"http://personal.crocodoc.com/PJKc8ow")
 
-q = Question.create(:question=>"What's the limitation of stage-of-the-art Rosetta structure prediction methodology?", :problem1=>'The native structure almost always has higher energy than any non-native conformation', :problem2=>'The free energy landscape that must be searched is extremely small', :problem3=>'Is primarily limited by the conformational sampling ', :problem4=>'There is not a possible way to search this landscape, even Rosetta methodology')
+q = Question.create(:question=>"Which of the following communication option has the highest rank of social presence",
+                    :problem1=>'audio/video communication',
+                    :problem2=>'audio only',
+                    :problem3=>'written correspondence/email',
+                    :problem4=>'face-to-face')
 p2.questions << q
 
-q = Question.create(:question=>"How Foldit solve the problem that many players have no previous exposure to molecuar biology?", :problem1=>'Ask players to go through the documentation for this game', :problem2=>'Perform a user classfication, if you are a novice than you have to go through technical terms', :problem3=>'Assign a molecuar biology professonal to walk you through those concepts ', :problem4=>'Use series of introductory levels to introduce technical concepts')
+q = Question.create(:question=>"Regarding the communication, which of the following statement is true",
+                    :problem1=>'When we make a choice between two channels touse for informal interaction,
+                                discrepancies between the two channels are not decisive',
+                    :problem2=>'If one channel is half as good as another, we will still tend to use it',
+                    :problem3=>'When you have the choice betweenface-to-face and an imitation,
+                                no matter how good, it is natural to choose the real thing',
+                    :problem4=>'In the Cruiser video study, people would use the video/audio system to communicate directly instead of setting up a real face-to-face conversation')
 p2.questions << q
 
-q = Question.create(:question=>"In solving the strand-swap problem, which of the following stagement is correct?", :problem1=>'Rosetta did sample some partially swapped conformations, and also retained in subsequent generations', :problem2=>'Human player would ignore the temporary energy increase, because they correctly recognized that the swap could ultimately lead to lower energies', :problem3=>'The automated methods have difficulty performing major protein restructuring operations, especially once the solution has settled in a local high-energy basin', :problem4=>'Human players have difficulty distinguish which starting point will be most useful to them')
+q = Question.create(:question=>"Which of the following analogy illustrate the same idea as the crutches and shoes analogy in the paper?",
+                    :problem1=>'necklace and telescope',
+                    :problem2=>'glasses and glove', #*correct answer*
+                    :problem3=>'suitcase and backpack',
+                    :problem4=>'hearing-aid and wig')
+p2.questions << q
+
+
+q = Question.create(:question=>"How do we create tools that go beyond being there?",
+                    :problem1=>'By addressing needs with media and their mechanisms', # *correct answer*
+                    :problem2=>'By utilizing cutting-edge technology including 3D technology',
+                    :problem3=>'By producing information rich channels including feedback, cue variety, stylized openings, etc.',
+                    :problem4=>'By taking advantage of technology that physcial cannot provide including asychonous communication, automatic archieve, etc.')
 p2.questions << q
 
 

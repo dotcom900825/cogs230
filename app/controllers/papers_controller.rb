@@ -21,9 +21,9 @@ class PapersController < ApplicationController
         sa.answer = value.to_i
         sa.save
       end
-      user_paper = current_user.user_papers.where('user_id = ? and paper_id = ?', current_user.id, paper.id).first
-      user_paper.update_attribute(:reading_time, user_paper.reading_time.to_i + params[:reading_time].to_i)
     end
+    user_paper = current_user.user_papers.where('user_id = ? and paper_id = ?', current_user.id, paper.id).first
+    user_paper.update_attribute(:reading_time, user_paper.reading_time.to_i + 1)
     logout
     redirect_to thank_path
   end
