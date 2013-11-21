@@ -45,10 +45,10 @@ q = Question.create(:question=>"Which of the following communication option has 
 p2.questions << q
 
 q = Question.create(:question=>"Regarding the communication, which of the following statement is true",
-                    :problem1=>'When we make a choice between two channels touse for informal interaction,
+                    :problem1=>'When we make a choice between two channels to use for informal interaction,
                                 discrepancies between the two channels are not decisive',
                     :problem2=>'If one channel is half as good as another, we will still tend to use it',
-                    :problem3=>'When you have the choice betweenface-to-face and an imitation,
+                    :problem3=>'When you have the choice between face-to-face and an imitation,
                                 no matter how good, it is natural to choose the real thing',
                     :problem4=>'In the Cruiser video study, people would use the video/audio system to communicate directly instead of setting up a real face-to-face conversation')
 p2.questions << q
