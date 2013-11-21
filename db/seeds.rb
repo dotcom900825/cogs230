@@ -35,7 +35,7 @@ User.create(:username=>'Feng Zhu', :user_type=>0, :use_system=>0)
 
 #p1 = Paper.create(:name=>"Evidence for a Collective IntelligenceFactor in the Performance of Human Groups")
 
-p2 = Paper.create(:name=>"Beyong Being There", :url=>"http://personal.crocodoc.com/xbPRLZ1", :not_collaborative_url=>"http://personal.crocodoc.com/reZGkny")
+p2 = Paper.create(:name=>"Beyong Being There", :url=>"http://personal.crocodoc.com/Fzs2X6i", :not_collaborative_url=>"http://personal.crocodoc.com/PJKc8ow")
 
 q = Question.create(:question=>"Which of the following communication option has the highest rank of social presence",
                     :problem1=>'audio/video communication',
