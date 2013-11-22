@@ -66,12 +66,6 @@ q = Question.create(:question=>"There are three ways to portray social cues in a
 p2.questions << q
 
 
-q = Question.create(:question=>"How do we create tools that go beyond being there?",
-                    :problem1=>'By addressing needs with media and their mechanisms', # *correct answer*
-                    :problem2=>'By utilizing cutting-edge technology including 3D technology',
-                    :problem3=>'By producing information rich channels including feedback, cue variety, stylized openings, etc.',
-                    :problem4=>'By taking advantage of technology that physcial cannot provide including asychonous communication, automatic archieve, etc.')
-p2.questions << q
 
 
 User.all.each do |user|
