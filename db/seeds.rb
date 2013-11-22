@@ -35,29 +35,34 @@ User.create(:username=>'Feng Zhu', :user_type=>0, :use_system=>0)
 
 #p1 = Paper.create(:name=>"Evidence for a Collective IntelligenceFactor in the Performance of Human Groups")
 
-p2 = Paper.create(:name=>"Beyong Being There", :url=>"http://personal.crocodoc.com/Fzs2X6i", :not_collaborative_url=>"http://personal.crocodoc.com/PJKc8ow")
+p2 = Paper.create(:name=>"Social Translucence: An Approach to Designing Systems that Support Social Processes", :url=>"http://personal.crocodoc.com/DKj23Hh", :not_collaborative_url=>"http://personal.crocodoc.com/JQw0d2u")
 
-q = Question.create(:question=>"Which of the following communication option has the highest rank of social presence",
-                    :problem1=>'audio/video communication',
-                    :problem2=>'audio only',
-                    :problem3=>'written correspondence/email',
-                    :problem4=>'face-to-face')
+q = Question.create(:question=>"Why the designers of communication and collaboration systems can take many inspiration from work in the areas of architecture and urban design?",
+                    :problem1=>'Because in the realm of architecture or urban planning, they need to get many feedback and communicate with other people to come up with good design',
+                    :problem2=>'Architects and urban designers are concerned with creating contexts that support various form of human-human interaction',
+                    :problem3=>'Designers in those domains can assume the existence of a consistent and unquestioned physics that underlies social interaction where in digital world there is none',
+                    :problem4=>"Because architects and urban designers are building the underlying structure for people to live, a massive system that provide foundation for people's communication ")
 p2.questions << q
 
-q = Question.create(:question=>"Regarding the communication, which of the following statement is true",
-                    :problem1=>'When we make a choice between two channels to use for informal interaction,
-                                discrepancies between the two channels are not decisive',
-                    :problem2=>'If one channel is half as good as another, we will still tend to use it',
-                    :problem3=>'When you have the choice between face-to-face and an imitation,
-                                no matter how good, it is natural to choose the real thing',
-                    :problem4=>'In the Cruiser video study, people would use the video/audio system to communicate directly instead of setting up a real face-to-face conversation')
+q = Question.create(:question=>"In the quicky opend door example, the author try to illustrate three characteristics of socially translucent system except for?",
+                    :problem1=>'Visability',
+                    :problem2=>'Awareness',
+                    :problem3=>'Accountability',
+                    :problem4=>'Reusability')
 p2.questions << q
 
-q = Question.create(:question=>"Which of the following analogy illustrate the same idea as the crutches and shoes analogy in the paper?",
-                    :problem1=>'necklace and telescope',
-                    :problem2=>'glasses and glove', #*correct answer*
-                    :problem3=>'suitcase and backpack',
-                    :problem4=>'hearing-aid and wig')
+q = Question.create(:question=>"The paper discussed social translucence and transparency, which of the following illustrates translucence(not transparency)?",
+                    :problem1=>'Facebook messenger',
+                    :problem2=>'Online chatting room',
+                    :problem3=>'LinkedIn connection',
+                    :problem4=>'Discussion forum')
+p2.questions << q
+
+q = Question.create(:question=>"There are three ways to portray social cues in a digital system, which one of the following servers as a reason for the authors to pick the abstract approach?",
+                    :problem1=>"The abstract approach don't have resolution limitation on",
+                    :problem2=>"The abstract approach don't need users to manipulate avatars",
+                    :problem3=>'The abstract scales very good',
+                    :problem4=>'The abstract approach has not received sufficient attention')
 p2.questions << q
 
 
