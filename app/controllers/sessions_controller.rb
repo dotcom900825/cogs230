@@ -56,7 +56,7 @@ class SessionsController < ApplicationController
   end
 
   def cse218
-    @user = User.where(:username=>params[:user][:name].downcase).first_or_create(:use_system=>0)
+    @user = User.where(:username=>params[:user][:name].downcase).first_or_create(:use_system=>0, :private_paper_url=>"www.baidu.com")
     auto_login(@user)
 
     paper = Paper.where(:name=>"Modular aspect-oriented design with XPIs")
@@ -74,6 +74,11 @@ class SessionsController < ApplicationController
           redirect_to use_system_papers_path
         else
           @user.update_attribute(:use_system, 2)
+          purl = Cse218PrivateUrl.where(:marked=>0).first
+          if purl.present?
+            @user.update_attribute(:private_paper_url, purl.url)
+            purl.update_attribute(:marked, 1)
+          end
           redirect_to not_use_system_papers_path
         end
       else
@@ -95,6 +100,11 @@ class SessionsController < ApplicationController
           redirect_to use_system_papers_path
         else
           @user.update_attribute(:use_system, 2)
+          purl = Cse218PrivateUrl.where(:marked=>0).first
+          if purl.present?
+            @user.update_attribute(:private_paper_url, purl.url)
+            purl.update_attribute(:marked, 1)
+          end
           redirect_to not_use_system_papers_path
         end
       else

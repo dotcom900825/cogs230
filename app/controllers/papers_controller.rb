@@ -23,7 +23,7 @@ class PapersController < ApplicationController
       end
     end
     user_paper = current_user.user_papers.where('user_id = ? and paper_id = ?', current_user.id, paper.id).first
-    user_paper.update_attribute(:reading_time, user_paper.reading_time.to_i + 1)
+    user_paper.update_attribute(:reading_time, user_paper.reading_time.to_i + params[:reading_time].to_i)
     logout
     redirect_to thank_path
   end

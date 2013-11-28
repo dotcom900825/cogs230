@@ -11,7 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131120214457) do
+ActiveRecord::Schema.define(version: 20131128081246) do
+
+  create_table "cse218_private_urls", force: true do |t|
+    t.string   "url"
+    t.integer  "marked",     default: 0
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "login_counts", force: true do |t|
     t.integer  "esl_count",    default: 0
@@ -58,7 +65,7 @@ ActiveRecord::Schema.define(version: 20131120214457) do
   end
 
   create_table "users", force: true do |t|
-    t.string   "username",         null: false
+    t.string   "username",          null: false
     t.string   "email"
     t.string   "crypted_password"
     t.string   "salt"
@@ -66,6 +73,7 @@ ActiveRecord::Schema.define(version: 20131120214457) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "use_system"
+    t.string   "private_paper_url"
   end
 
 end
