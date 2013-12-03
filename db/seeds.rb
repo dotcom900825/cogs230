@@ -9,74 +9,66 @@ LoginCount.create(:esl_count=>0, :native_count=>0)
 
 
 
-User.create(:username=>'Melissa Cameron', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/FSQ5hEq
-')
-User.create(:username=>'Alex Fung', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/kLezPxp
-')
-User.create(:username=>'Velu Ganapathy ', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/6xCTl0J
-')
-User.create(:username=>'Peter Henriksen', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/sgzdV8C
-')
-User.create(:username=>'Galit Hofree', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/MfQ0eqb
-')
-User.create(:username=>'Tobias Juul Broegger Jensen', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/rL2b5yA
-')
-User.create(:username=>'Kunal Korgaonkar', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/EDolAcn
-')
-User.create(:username=>'Adam Mekrut', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/5SqLP0Y
-')
-User.create(:username=>'Christian Boeggild Otte', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/H1ApsWa
-')
+User.create(:username=>'Melissa Cameron', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/x3lsJnr')
+User.create(:username=>'Alex Fung', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/r0u9bEn')
+User.create(:username=>'Velu Ganapathy ', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/Pz5DAO0')
+User.create(:username=>'Peter Henriksen', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/De3kfO0')
+User.create(:username=>'Galit Hofree', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/hesqgLZ')
+User.create(:username=>'Tobias Juul Broegger Jensen', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/pLObIC1')
+User.create(:username=>'Kunal Korgaonkar', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/nTJUyid')
+User.create(:username=>'Adam Mekrut', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/jlTYJWG')
+User.create(:username=>'Christian Boeggild Otte', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/7cLKdC1')
 User.create(:username=>'Vineet Pandey', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/qTBZCY8
 ')
-User.create(:username=>'Dexin Qi', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/y5zuVmI')
-User.create(:username=>'Adam Rule', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/qTFvIkP')
-User.create(:username=>'Amer Sinha', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/YL2Ehgo')
-User.create(:username=>'Rosalyne Sirimitr', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/ZSkhUpN')
-User.create(:username=>'Richard Tibbles', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/pcwZr8y')
-User.create(:username=>'Rebecca Walsh', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/go7P84Q')
-User.create(:username=>'Guan Wang', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/9u5qTdQ')
-User.create(:username=>'Edward Wang', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/PCsNJdB')
-User.create(:username=>'Brent Wong', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/UdYBi9C')
-User.create(:username=>'Victor Wu', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/WNTJQ5g')
-User.create(:username=>'Yu Xia', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/FYXlbJm')
-User.create(:username=>'Kendall Youngstrom', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/jOuXgl5')
-User.create(:username=>'Rizhen Zhang', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/kmni2ey')
-User.create(:username=>'Tianyin Xu', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/8NFvuHm')
-User.create(:username=>'Feng Zhu', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/kN2mYvx')
+User.create(:username=>'Dexin Qi', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/2n6AQla')
+
+User.create(:username=>'Adam Rule', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/4TBlWjP')
+User.create(:username=>'Amer Sinha', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/zNS6W1R')
+User.create(:username=>'Rosalyne Sirimitr', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/0fkuhQ7')
+User.create(:username=>'Richard Tibbles', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/ouTPzyi')
+User.create(:username=>'Rebecca Walsh', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/YNdbruo')
+User.create(:username=>'Guan Wang', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/4W6dnQy')
+User.create(:username=>'Edward Wang', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/Lih7Y9a')
+User.create(:username=>'Brent Wong', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/8RhiTk6')
+User.create(:username=>'Victor Wu', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/rl5f2W6')
+User.create(:username=>'Yu Xia', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/cSAMtWD')
+User.create(:username=>'Kendall Youngstrom', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/2QJoVNF')
+User.create(:username=>'Rizhen Zhang', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/q8xa1Ez')
+User.create(:username=>'Tianyin Xu', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/g8J4oDW')
+User.create(:username=>'Feng Zhu', :user_type=>0, :use_system=>0, :private_paper_url=>'http://personal.crocodoc.com/Le7Bodf')
 
 #p1 = Paper.create(:name=>"Evidence for a Collective IntelligenceFactor in the Performance of Human Groups")
 
-p2 = Paper.create(:name=>"SUPPLE: Automatically Generating User Interfaces",
-                  :url=>"http://personal.crocodoc.com/IkHSOer",
-                  :not_collaborative_url=>"http://personal.crocodoc.com/gCwc2r7")
+p2 = Paper.create(:name=>"Cognitive control in media multitaskers",
+                  :url=>"http://personal.crocodoc.com/lKAqGWU",
+                  :not_collaborative_url=>"http://personal.crocodoc.com/OeLs1jI")
 
-q = Question.create(:question=>"Which of the following is not required input by adaptive interface renderer?",
-                    :problem1=>'interface specification',
-                    :problem2=>'device model',
-                    :problem3=>'user trace',
-                    :problem4=>"render speed")
+q = Question.create(:question=>"Which of the following is true about HMMs and LMMs?",
+                    :problem1=>'HMMs are better at task switching than LMMs',
+                    :problem2=>'LMMs are slower than HMMs responding to AX trials.',
+                    :problem3=>'LMMs are better at filtering irrelevant representations in memory',
+                    :problem4=>"HMMs show same performance in AX trials when distractor level changes")
 p2.questions << q
 
-q = Question.create(:question=>"A display-based device is modeled as a tuple {W, Cd, M, N}, which of the following statement is incorrect?",
-                    :problem1=>'W is the set of available UI widgets',
-                    :problem2=>'Cd denotes a set of device-specific constraints',
-                    :problem3=>'M is device specific function for evaluating the suitability of using particular widgets contexts',
-                    :problem4=>'N represent how easy it is use the device')
+q = Question.create(:question=>"According to the experiment result, which of the following is false about MMI?",
+                    :problem1=>'MMI is not related with SAT score',
+                    :problem2=>'MMI is related with media usage',
+                    :problem3=>'MMI is not related with need for cognition',
+                    :problem4=>'MMI is related with gender')
 p2.questions << q
 
-q = Question.create(:question=>"In the Modeling Users with Traces chapter, which of the following is incorrect?",
-                    :problem1=>'Frequent change to the interface can be distracting',
-                    :problem2=>'the format of a trace is independent of a particular rendering',
-                    :problem3=>'Even with the accumulated trace information, we are still not able to re-render the interface adapting to it to the needs of a particular user',
-                    :problem4=>'The interface needs to be rendered even before the user has a chance to use it and generate any traces.')
+q = Question.create(:question=>"In the test of filtering ability, which of the following is false?",
+                    :problem1=>'HMM performance is linearly negativily affected by distractors',
+                    :problem2=>'LMM is not affected by distractors',
+                    :problem3=>'HMM tend to allow irrelevant stimuli into working memory',
+                    :problem4=>'LMM does not have the ability to filter out irrelevant stimuli')
 p2.questions << q
 
-q = Question.create(:question=>"The paper makes four contributions, which of the following one is not?",
-                    :problem1=>"Defined the interface rendering problem as a decision-theoretic optimization problem",
-                    :problem2=>"The framework includes as an input a trace of typical user behavior, allowing for user specifc rendering",
-                    :problem3=>'Present an efficient branch and bound rendering algorithm',
-                    :problem4=>'Discussed the limitation of the SUPPLE system.')
+q = Question.create(:question=>"In the discussion section, which of the following is false?",
+                    :problem1=>"The present research suggests that HMM have greater difficulty filtering out irrelevent stimuli from their environment",
+                    :problem2=>"People who infrequently multitask are more effective at volitionally allocating their attention in the face of distractions. ",
+                    :problem3=>'LMMs have a greater tendency for top-down attentional control, and thus they may find it easier to attentionally focus on a single task in the face of distractions.',
+                    :problem4=>'HMMs are less likely to respond to stimuli outside the realm of their immediate task, and thus may have a greater tendency for bottom-up attentional control')
 p2.questions << q
 
 

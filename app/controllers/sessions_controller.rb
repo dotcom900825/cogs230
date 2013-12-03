@@ -56,7 +56,7 @@ class SessionsController < ApplicationController
   end
 
   def cse218
-    @user = User.where(:username=>params[:user][:name].downcase).first_or_create(:use_system=>0, :private_paper_url=>"www.baidu.com")
+    @user = User.where(:username=>params[:user][:name].downcase).first_or_create(:user_type=>0, :use_system=>0, :private_paper_url=>"www.baidu.com")
     auto_login(@user)
 
     paper = Paper.where(:name=>"Modular aspect-oriented design with XPIs")
